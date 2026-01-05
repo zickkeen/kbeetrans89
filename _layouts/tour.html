@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<section class="py-12">
+  <div class="container">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold text-[#1A2B48] mb-4">{{ page.title }}</h1>
+        <div class="flex justify-center items-center space-x-6 text-gray-600 mb-4">
+          <span class="flex items-center">
+            <i class="fas fa-clock mr-2 color-accent"></i>
+            {{ page.duration }}
+          </span>
+          <span class="flex items-center">
+            <i class="fas fa-dollar-sign mr-2 color-accent"></i>
+            {{ page.price }}
+          </span>
+        </div>
+        {% if page.description %}
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">{{ page.description }}</p>
+        {% endif %}
+      </div>
+
+      <!-- Gambar -->
+      {% if page.image %}
+      <div class="mb-8">
+        <img src="{{ site.url }}{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" class="w-full h-96 object-cover rounded-lg shadow-lg">
+      </div>
+      {% endif %}
+
+      <!-- Konten -->
+      <div class="prose prose-lg max-w-none">
+        {{ content }}
+      </div>
+
+      <!-- CTA Button -->
+      <div class="mt-12 text-center">
+        <a href="{{ site.url }}{{ site.baseurl }}/booking/?tour={{ page.slug }}" class="cta-button">
+          <i class="fas fa-calendar-check mr-2"></i>Booking Sekarang
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Custom styles for tour pages */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.prose th {
+  background: #1A2B48;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.prose td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.prose tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.prose tr:hover {
+  background: #f3f4f6;
+}
+
+.prose h2 {
+  color: #1A2B48;
+  border-bottom: 2px solid #ff5722;
+  padding-bottom: 8px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  color: #1A2B48;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose li {
+  padding: 4px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.prose li::before {
+  content: "✓";
+  color: #ff5722;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+</style>

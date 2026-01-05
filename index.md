@@ -1,0 +1,294 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Konten Utama -->
+<!-- Hero Section -->
+<section id="home">
+  <div class="hero-content">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">Jelajahi Malang Bersama <span>KBeeTrans89</span></h1>
+    <p>Partner Perjalanan Wisata Anda yang Profesional dan Terpercaya</p>
+    <a class="cta-button" href="https://wa.me/6282146252589"
+      >Hubungi Kami Sekarang</a
+    >
+  </div>
+</section>
+<!-- Fitur Section -->
+<section id="kategori" class="text-center mb-20 py-12">
+  <div class="container">
+    <p class="color-accent font-semibold tracking-wider uppercase mb-2">
+      CATEGORY
+    </p>
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">
+      We Offer Best Services
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Card 1: Explorer JATIM -->
+      <div
+        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      >
+        <div
+          class="service-icon-base mx-auto bg-green-100 text-green-600"
+        >
+          <i class="fas fa-compass"></i>
+        </div>
+        <h4 class="text-xl font-bold text-[#1A2B48] mb-2">
+          Explorer JATIM
+        </h4>
+        <p class="text-gray-500 text-sm">
+          Jelajahi JATIM dengan berbagai destinasi wisata yang menarik.
+        </p>
+      </div>
+
+      <!-- Card 2: Shuttle Service -->
+      <div
+        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl relative"
+      >
+        <div class="service-icon-base mx-auto bg-blue-100 text-blue-600">
+          <i class="fas fa-plane-departure"></i>
+        </div>
+        <h4 class="text-xl font-bold text-[#1A2B48] mb-2">
+          SHUTTLE SERVICE 
+        </h4>
+        <p class="text-gray-500 text-sm">
+          Layanan antar-jemput cepat dan tepat waktu ke bandara dan pelabuhan.
+        </p>
+        <div class="absolute top-0 right-0 p-3">
+          <div
+            class="w-4 h-4 rounded-full bg-yellow-400 opacity-70"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Card 3: Rent Car -->
+      <div
+        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      >
+        <div
+          class="service-icon-base mx-auto bg-yellow-100 text-yellow-600"
+        >
+          <i class="fas fa-car"></i>
+        </div>
+        <h4 class="text-xl font-bold text-[#1A2B48] mb-2">
+          Rent Car
+        </h4>
+        <p class="text-gray-500 text-sm">
+          Sewa mobil dengan harga terjangkau dan layanan terbaik.
+        </p>
+      </div>
+
+      <!-- Card 4: Tour Travel -->
+      <div
+        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      >
+        <div
+          class="service-icon-base mx-auto bg-purple-100 text-purple-600"
+        >
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <h4 class="text-xl font-bold text-[#1A2B48] mb-2">
+          Tour Travel
+        </h4>
+        <p class="text-gray-500 text-sm">
+          Nikmati perjalanan wisata yang tak terlupakan dengan tim kami.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="destinations" class="text-center py-12">
+  <div class="container">
+    <p class="color-accent font-semibold tracking-wider uppercase mb-2">
+      Top Selling
+    </p>
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">
+      Top Destinations
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {% for tour in site.tours %}
+        {% if tour.highlight %}
+        <a
+          href="{{ tour.url | relative_url }}"
+          class="group block destination-card bg-white rounded-3xl shadow-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-xl"
+        >
+          <img
+            class="w-full h-80 object-cover"
+            src="{{ site.url }}{{ site.baseurl }}{{ tour.image | default: '/assets/img/placeholder.jpg' }}"
+            alt="{{ tour.title }}"
+          />
+          <div class="p-5 text-left">
+            <div class="flex justify-between items-center mb-3">
+              <h3
+                class="text-lg font-semibold text-gray-700 group-hover:text-gray-900"
+              >
+                {{ tour.title }}
+              </h3>
+              <span class="color-accent font-bold text-xl">{{ tour.price | default: '$***' }}</span>
+            </div>
+            <div class="flex items-center text-gray-500 text-sm">
+              <i class="fas fa-paper-plane mr-2 color-accent"></i>
+              <span>{{ tour.duration | default: '1 Day Trip' }}</span>
+            </div>
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+       
+<!-- Testimonial Section -->
+<section id="testimonials">
+  <div class="container">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">Testimonial Pelanggan</h2>
+    <div class="testimonial-slider-container">
+      <div class="testimonial-track">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="rating">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p>
+            "Pelayanan K-Bee Trans 89 luar biasa! Drivernya, Mas Rian,
+            ramah banget dan tahu jalan tikus. Perjalanan ke Bromo jadi
+            lancar jaya. Recommended!"
+          </p>
+          <span class="author">- Bpk. Haryono, Jakarta</span>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="rating">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p>
+            "Awalnya ragu, tapi ternyata unit Hiace-nya bersih dan wangi.
+            Jemputan di Bandara Juanda tepat waktu banget. Pasti pakai
+            K-Bee lagi."
+          </p>
+          <span class="author">- Ibu Sintia & Keluarga</span>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="rating">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9734;</span>
+          </div>
+          <p>
+            "Overall oke. Armadanya nyaman untuk rombongan kami keliling
+            Batu. Mungkin bisa ditambahkan free air mineral di mobil biar
+            lebih mantap."
+          </p>
+          <span class="author">- Kak Budi, Rombongan Mahasiswa</span>
+        </div>
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+          <div class="rating">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p>
+            "Harga bersaing dan pelayanannya profesional. Admin fast
+            response. Nggak repot sama sekali, tinggal duduk manis. Terima
+            kasih K-Bee Trans 89!"
+          </p>
+          <span class="author">- Ibu Mega, Surabaya</span>
+        </div>
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card">
+          <div class="rating">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p>
+            "Menyenangkan! Diajak keliling pantai-pantai di Malang
+            Selatan. Drivernya sabar banget nemenin kita foto-foto. Top!"
+          </p>
+          <span class="author">- Rina dan kawan-kawan</span>
+        </div>
+      </div>
+      <!-- Tombol Navigasi Slider -->
+      <button class="slider-btn" id="prevBtn">&#10094;</button>
+      <button class="slider-btn" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Kami Section -->
+<section id="about">
+  <div class="container">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">Tentang K-Bee Trans 89</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3 class="color-accent font-semibold tracking-wider uppercase mb-2">Solusi Transportasi Wisata Terbaik di Malang</h3>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;K-Bee Trans 89 adalah perusahaan penyedia jasa transportasi dan
+          pariwisata yang berlokasi di jantung kota Malang. Kami
+          berkomitmen untuk memberikan pengalaman perjalanan yang tak
+          terlupakan bagi setiap pelanggan.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;Dengan didukung oleh armada yang terawat (Innova, Hiace, Elf,
+          dll.), kru yang profesional dan ramah, serta pengetahuan
+          mendalam tentang destinasi wisata di Jawa Timur, kami adalah
+          pilihan ideal untuk liburan keluarga, perjalanan bisnis, maupun
+          study tour sekolah Anda.
+        </p>
+        <p>
+          <strong>Visi Kami:</strong> Menjadi agen travel pariwisata
+          terdepan di Malang yang dikenal karena kualitas layanan,
+          keamanan, dan kepuasan pelanggan.
+        </p>
+      </div>
+      <div class="about-image">
+        <img
+          alt="Tim K-Bee Trans 89 Malang"
+          src="/assets/img/kbeetrans89-team.webp"
+          title="Tim Profesional K-Bee Trans 89"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Kontak Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">Hubungi Kami</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p>
+          <strong>Dapatkan Penawaran Terbaik</strong><br />
+          Jangan ragu untuk menghubungi kami. Tim kami siap 24/7 untuk
+          menjawab pertanyaan Anda dan membantu merencanakan perjalanan
+          Anda.
+        </p>
+        <p>
+          <strong>Telepon/WhatsApp:</strong><br />
+          <a href="https://wa.me/6282146252589" target="_blank"
+            >+62821-4625-2589</a
+          >
+        </p>
+        <p>
+          <strong>Email:</strong><br />
+          <a href="mailto:info@kbeetrans89.co.id"
+            >info@kbeetrans89.co.id</a
+          >
+        </p>
+        <p>
+          <strong>Alamat:</strong><br />
+          Jl. Pesantren 27 RT 22 RW 04 Selobekiti, Plandi, Kec. Wonosari,
+          Kabupaten Malang, Jawa Timur 65164
+        </p>
+      </div>
+      <!-- Peta -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4577.2843796500165!2d112.52453787563084!3d-8.118133491911259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e789fcd4432bca9%3A0x9363dd8616ab3f63!2sKbeetrans89!5e1!3m2!1sid!2sid!4v1767619910742!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

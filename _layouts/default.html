@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="id"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:b="http://www.google.com/2005/gml/b"
+  xmlns:data="http://www.google.com/2005/gml/data"
+  xmlns:expr="http://www.google.com/2005/gml/expr"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- SEO -->
+    <meta
+      content="{{ page.description | default: site.description }}"
+      name="description"
+    />
+    <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/favicon.ico" name="favicon" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css" rel="icon" type="image/x-icon" />
+    <link href="{{ site.url }}{{ site.baseurl }}" rel="canonical" />
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "K-Bee Trans 89",
+        "description": "Agen travel pariwisata profesional di Malang yang menyediakan sewa bus, paket wisata, dan layanan transportasi.",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "logo": "{{ site.url }}{{ site.baseurl }}/assets/img/KbeeTrans89.png",
+        "telephone": "+62 822-3718-7809",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Selobekiti, Plandi, Kec. Wonosari",
+          "addressLocality": "Kabupaten Malang",
+          "addressRegion": "Jawa Timur",
+          "postalCode": "65164",
+          "addressCountry": "ID"
+        },
+        "openingHours": "Mo-Su 08:00-22:00",
+        "priceRange": "$$"
+      }
+    </script>
+    <link href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .color-accent {
+        color: #ff5722;
+      }
+      .service-icon-base {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
+    {% seo %}
+  </head>
+  <body>
+    <!-- Header dan Navigasi -->
+    <header class="header">
+      <div class="container navbar">
+        <a class="logo" href="{{ site.url }}{{ site.baseurl }}/">
+          <img class="image-logo" alt="Logo K-Bee Trans 89" src="{{ site.url }}{{ site.baseurl }}/assets/img/KbeeTrans89.png" />
+        </a>
+        <ul class="nav-links">
+          <li><a class="{% if page.url == '/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
+          <li><a class="{% if page.url contains '/tours/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/tours/">Paket Tour</a></li>
+          <li><a class="{% if page.url contains '/blog/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a></li>
+          <li><a class="{% if page.url contains '/booking/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/booking/">Booking</a></li>
+          {% if page.url == '/' %}
+          <li><a href="#kategori">Kategori</a></li>
+          <li><a href="#destinations">Destinasi</a></li>
+          <li><a href="#testimonials">Testimonial</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          {% endif %}
+        </ul>
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; {{ site.time | date: "%Y" }} K-Bee Trans 89. All Rights Reserved. Didesain oleh K-Bee
+          Trans 89.
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>

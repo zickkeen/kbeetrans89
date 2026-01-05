@@ -1,0 +1,45 @@
+title: "K-Bee Trans 89"
+description: "Agen Travel Pariwisata Malang - Sewa Bus, Paket Wisata, Transportasi Profesional"
+url: "https://zickkeen.github.io"
+baseurl: "/kbeetrans89"
+repository: zickkeen/kbeetrans89
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  tours:
+    output: true
+    permalink: /tours/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+
+# Include
+include:
+  - _pages
+
+# Sass
+sass:
+  sass_dir: assets/css
+
+# SEO
+author: "K-Bee Trans 89"
+social:
+  name: K-Bee Trans 89
+  links:
+    - https://wa.me/6282146252589

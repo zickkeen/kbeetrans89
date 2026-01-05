@@ -27,7 +27,6 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
-  padding-top: var(--header-height);
 }
 
 /* --- Perbaikan: Sembunyikan Widget Blog1 Wajib --- */
@@ -71,11 +70,6 @@ h1 {
 h2 {
   font-size: 2.2rem;
   text-align: center;
-  color: #ff5722;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -199,13 +193,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - var(--header-height));
+  min-height: 100vh;
   text-align: center;
   /* Ganti 'url' dengan URL gambar Anda yang sudah di-hosting */
   background: linear-gradient(rgba(29, 130, 32, 0.243), rgba(245, 249, 254, 0.157)), url('/assets/img/monumen-tugu-malang.webp') no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   color: var(--bg-color);
+  padding-top: var(--header-height);
 }
 
 #home .hero-content {
