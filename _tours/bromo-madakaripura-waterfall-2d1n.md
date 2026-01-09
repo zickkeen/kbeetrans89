@@ -1,16 +1,16 @@
 ---
 layout: tour
-title: "Bromo Snorkling Gili Ketapang"
-slug: "bromo-snorkling-gili-ketapang"
-image: "/assets/img/bromo-snorkling-gili-ketapang.webp"
-duration: "2D1N"
+title: "Bromo – Madakaripura Waterfall (2D1N)"
+slug: "bromo-madakaripura-waterfall-2d1n"
+image: "/assets/img/madakaripura-waterfall.webp"
+duration: "2 Days 1 Night"
 price: "Mulai Rp 850.000"
-description: "Kombinasi sunrise Bromo dan snorkling di Gili Ketapang dalam 2 hari 1 malam"
+description: "Kombinasi tur Bromo dan air terjun Madakaripura dalam 2 hari 1 malam"
 ---
 
-# Paket Tour Bromo Snorkling Gili Ketapang (2D1N)
+# Paket Bromo – Madakaripura Waterfall (2D1N)
 
-Gabungkan pengalaman sunrise di Gunung Bromo dengan aktivitas snorkling di pantai Gili Ketapang. Paket 2 hari 1 malam yang sempurna untuk pecinta petualangan.
+Nikmati keindahan Gunung Bromo dan air terjun Madakaripura yang menakjubkan dalam paket 2 hari 1 malam.
 
 ## Destinasi
 
@@ -21,7 +21,7 @@ Gabungkan pengalaman sunrise di Gunung Bromo dengan aktivitas snorkling di panta
 - Bukit teletabis
 - Savana bromo
 - Pasir berbisik
-- Snorkling gili ketapang
+- Madakaripura waterfall
 
 ## Penjemputan
 
@@ -37,10 +37,6 @@ Gabungkan pengalaman sunrise di Gunung Bromo dengan aktivitas snorkling di panta
 - Jeep bromo
 - Tiket masuk bromo
 - Hotel di bromo
-- Semua keperluan snorkling
-- Tiket masuk gili Ketapang
-- Makan siang setelah snorkling
-- Dokumentasi under water snorkling
 - Snack dan air mineral
 
 ## Itinerary
@@ -49,15 +45,12 @@ Gabungkan pengalaman sunrise di Gunung Bromo dengan aktivitas snorkling di panta
 
 | Waktu | Kegiatan |
 |-------|----------|
-| 06.00 – 06.30 | Penjemputan di meeting point |
-| 06.30 – 08.30 | Perjalanan menuju pos gili Ketapang |
-| 08.30 – 09.00 | Persiapan trip, menyebrang ke pulau gili ketapang |
-| 09.00 – 10.00 | Penyebrangan ke gili ketapang |
-| 10.00 – 12.00 | Explorer snorkling gili ketapang |
-| 12.00 – 12.30 | Makan siang |
-| 12.30 – 13.30 | Penyebrangan k epos gili ketapang |
-| 13.30 – 18.00 | Perjalanan ke hotel bromo |
-| 18.00 | Cek in hotel, menikmati sunset di hotel free agenda |
+| 08.00 – 08.30 | Penjemputan di meeting point |
+| 08.30 – 09.30 | Perjalanan menuju air terjun madakaripura |
+| 09.30 – 10.30 | Menaiki ojek menuju pintu masuk madakaripura |
+| 10.30 – 13.00 | Explorer air terjun madakaripura |
+| 13.00 – 16.00 | Perjalanan menuju hotel di bromo |
+| 16.00 | Cek in hotel, menikmati sunset di hotel free agenda |
 
 ### Hari Kedua
 
@@ -77,14 +70,14 @@ Gabungkan pengalaman sunrise di Gunung Bromo dengan aktivitas snorkling di panta
 
 | Peserta | Harga |
 |---------|-----------------|
-| 2 orang | Rp 2.000.000 |
-| 3 orang | Rp 1.600.000 |
-| 4 orang | Rp 1.200.000 |
-| 5 orang | Rp 1.100.000 |
-| 6 orang | Rp 950.000 |
-| 7 orang | Rp 1.150.000 |
-| 8 orang | Rp 1.100.000 |
-| 9 orang | Rp 1.000.000 |
+| 2 orang | Rp 1.700.000 |
+| 3 orang | Rp 1.300.000 |
+| 4 orang | Rp 1.000.000 |
+| 5 orang | Rp 950.000 |
+| 6 orang | Rp 850.000 |
+| 7 orang | Rp 1.200.000 |
+| 8 orang | Rp 1.000.000 |
+| 9 orang | Rp 950.000 |
 | 10 orang | Rp 900.000 |
 | 11 orang | Rp 850.000 |
 
@@ -94,7 +87,4 @@ Gabungkan pengalaman sunrise di Gunung Bromo dengan aktivitas snorkling di panta
 - Untuk WNA ada tambahan biaya Rp 400.000
 - Untuk penjemputan area Surabaya ada tambahan biaya Rp 200.000
 - Minimum 2 orang peserta
-- Kondisi cuaca dapat mempengaruhi aktivitas snorkling
-- Wajib bisa berenang
-- Bawa sunblock dan topi
 - Harga dapat berubah tanpa pemberitahuan sebelumnya
