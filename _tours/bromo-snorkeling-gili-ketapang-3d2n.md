@@ -4,6 +4,7 @@ title: "Bromo – Snorkeling Gili Ketapang (3D2N)"
 slug: "bromo-snorkeling-gili-ketapang-3d2n"
 image: "/assets/img/bromo-snorkling-gili-ketapang.webp"
 duration: "3 Days 2 Nights"
+days: 3
 price: "Mulai Rp 1.350.000"
 description: "Kombinasi tur Bromo dengan snorkeling di Gili Ketapang dalam 3 hari 2 malam"
 ---

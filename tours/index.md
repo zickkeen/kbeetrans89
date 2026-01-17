@@ -13,7 +13,8 @@ title: "Paket Tour"
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {% for tour in site.tours %}
+      {% assign sorted_tours = site.tours | sort: 'days' %}
+      {% for tour in sorted_tours %}
       <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
         {% if tour.image %}
         <img src="{{ site.url }}{{ site.baseurl }}{{ tour.image }}" alt="{{ tour.title }}" class="w-full h-48 object-cover">

@@ -4,6 +4,7 @@ title: "Malang Batu City Tour"
 slug: "malang-batu-city-tour"
 image: "/assets/img/malang-batu-city-tour.webp"
 duration: "1 Day Service"
+days: 1
 price: "Mulai Rp 350.000"
 description: "Eksplorasi kota Malang dan Batu dengan berbagai destinasi wisata menarik"
 highlight: true

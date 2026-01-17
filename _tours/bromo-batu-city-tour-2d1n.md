@@ -4,6 +4,7 @@ title: "Bromo – Batu City Tour (2D1N)"
 slug: "bromo-batu-city-tour-2d1n"
 image: "/assets/img/malang-batu-city-tour.webp"
 duration: "2 Days 1 Night"
+days: 2
 price: "Mulai Rp 1.400.000"
 description: "Kombinasi tur Bromo dan city tour Batu dalam 2 hari 1 malam"
 ---

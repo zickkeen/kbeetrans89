@@ -4,7 +4,8 @@ title: "Bromo – Tumpak Sewu Waterfall – Batu (4D3N)"
 slug: "bromo-tumpak-sewu-batu-4d3n"
 image: "/assets/img/malang-batu-city-tour.webp"
 duration: "4 Days 3 Nights"
-price: "Mulai Rp 1.850.000"
+days: 4
+price: "Mulai Rp 1.900.000"
 description: "Tur meliputi Bromo, Tumpak Sewu, dan destinasi di Batu dalam 4 hari 3 malam"
 ---
 
@@ -80,9 +81,9 @@ Nikmati kombinasi petualangan Gunung Bromo, air terjun Tumpak Sewu, dan eksplora
 | 06.00 – 08.00 | Explorer bukit widodaren, kawah bromo, savana bromo |
 | 08.00 – 10.00 | Explorer pasir berbisik, pura luhur ponten |
 | 10.00 – 11.00 | Perjalanan dengan jeep ke rest area bromo |
-| 11.00 – 12.00 | Makan siang, cek out dan persiapan perjalanan menuju hotel tumpak sewu |
-| 12.00 – 17.00 | Perjalanan dengan mobil pribadi menuju hotel kawah ijen |
-| 17.00 | Cek in hotel di kawah ijen dan free agenda |
+| 11.00 – 12.00 | Makan siang cekout, dan persiapan perjalanan menuju hotel batu / malang
+| 12.00 – 17.00 | Perjalanan dengan mobil pribadi menuju hotel batu/malang |
+| 17.00 | Cek in hotel di batu / malang |
 
 ### Hari Keempat
 

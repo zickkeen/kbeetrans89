@@ -4,6 +4,7 @@ title: "Bromo – Tumpak Sewu Waterfall – Gili Ketapang (4D3N)"
 slug: "bromo-tumpak-sewu-gili-ketapang-4d3n"
 image: "/assets/img/bromo-snorkling-gili-ketapang.webp"
 duration: "4 Days 3 Nights"
+days: 4
 price: "Mulai Rp 1.750.000"
 description: "Tur meliputi Bromo, Tumpak Sewu, dan snorkeling di Gili Ketapang dalam 4 hari 3 malam"
 ---
@@ -80,9 +81,9 @@ Gabungkan keindahan Gunung Bromo, air terjun Tumpak Sewu, dan snorkeling di Gili
 | 06.00 – 08.00 | Explorer bukit widodaren, kawah bromo, savana bromo |
 | 08.00 – 10.00 | Explorer pasir berbisik, pura luhur ponten |
 | 10.00 – 11.00 | Perjalanan dengan jeep ke rest area bromo |
-| 11.00 – 12.00 | Makan siang, cek out dan persiapan perjalanan menuju hotel tumpak sewu |
-| 12.00 – 17.00 | Perjalanan dengan mobil pribadi menuju hotel kawah ijen |
-| 17.00 | Cek in hotel di kawah ijen dan free agenda |
+| 11.00 – 12.00 | Makan siang, cek out dan persiapan perjalanan menuju hotel gili ketapang |
+| 12.00 – 17.00 | Perjalanan dengan mobil pribadi menuju hotel gili ketapang |
+| 17.00 | Cek in hotel di gili ketapang dan free agenda |
 
 ### Hari Keempat
 

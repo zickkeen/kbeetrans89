@@ -4,6 +4,7 @@ title: "Bromo – Tumpak Sewu Waterfall – Kawah Ijen (4D3N)"
 slug: "bromo-tumpak-sewu-kawah-ijen-4d3n"
 image: "/assets/img/bromo-lava-tour-tumpak-sewu-kawah-ijen.webp"
 duration: "4 Days 3 Nights"
+days: 4
 price: "Mulai Rp 1.750.000"
 description: "Tur komprehensif meliputi Bromo, Tumpak Sewu, dan Kawah Ijen dalam 4 hari 3 malam"
 ---
@@ -81,7 +82,7 @@ Rasakan petualangan lengkap dengan mengunjungi tiga destinasi ikonik: Gunung Bro
 | 06.00 – 08.00 | Explorer bukit widodaren, kawah bromo, savana bromo |
 | 08.00 – 10.00 | Explorer pasir berbisik, pura luhur ponten |
 | 10.00 – 11.00 | Perjalanan dengan jeep ke rest area bromo |
-| 11.00 – 12.00 | Makan siang, cek out dan persiapan perjalanan menuju hotel tumpak sewu |
+| 11.00 – 12.00 | Makan siang, cek out dan persiapan perjalanan menuju hotel di kawah ijen |
 | 12.00 – 17.00 | Perjalanan dengan mobil pribadi menuju hotel kawah ijen |
 | 17.00 | Cek in hotel di kawah ijen dan free agenda |
 
