@@ -4,7 +4,8 @@ title: "Bromo – Tumpak Sewu Waterfall (3D2N)"
 slug: "bromo-tumpak-sewu-waterfall-3d2n"
 image: "/assets/img/tumpak-sewu.webp"
 duration: "3 Days 2 Nights"
-price: "Mulai Rp 1.350.000"
+days: 3
+price: "Mulai Rp 1.250.000"
 description: "Kombinasi tur Bromo dengan air terjun Tumpak Sewu dalam 3 hari 2 malam"
 ---
 

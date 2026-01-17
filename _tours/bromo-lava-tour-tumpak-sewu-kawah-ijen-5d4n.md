@@ -4,6 +4,7 @@ title: "Bromo – Lava Tour Semeru, Kapas Biru Tumpak Sewu Waterfall – Kawah I
 slug: "bromo-lava-tour-tumpak-sewu-kawah-ijen-5d4n"
 image: "/assets/img/bromo-lava-tour-tumpak-sewu-kawah-ijen.webp"
 duration: "5 Days 4 Nights"
+days: 5
 price: "Mulai Rp 2.400.000"
 description: "Tur epik meliputi lava tour Semeru, Tumpak Sewu, dan Kawah Ijen dalam 5 hari 4 malam"
 ---

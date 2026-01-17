@@ -4,6 +4,7 @@ title: "Bromo – Kawah Ijen (3D2N)"
 slug: "bromo-kawah-ijen-3d2n"
 image: "/assets/img/kawah-ijen.webp"
 duration: "3 Days 2 Nights"
+days: 3
 price: "Mulai Rp 1.300.000"
 description: "Kombinasi tur Bromo dengan eksplorasi Kawah Ijen dalam 3 hari 2 malam"
 ---

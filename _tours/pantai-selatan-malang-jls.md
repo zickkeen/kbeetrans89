@@ -4,6 +4,7 @@ title: "Pantai Selatan Malang (JLS)"
 slug: "pantai-selatan-malang-jls"
 image: "/assets/img/jls-malang.webp"
 duration: "1 Day Service"
+days: 1
 price: "Mulai Rp 350.000"
 description: "Jelajahi keindahan pantai selatan Malang dengan berbagai destinasi wisata pantai menarik"
 ---

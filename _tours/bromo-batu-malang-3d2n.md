@@ -4,6 +4,7 @@ title: "Bromo – Batu Malang (3D2N)"
 slug: "bromo-batu-malang-3d2n"
 image: "/assets/img/malang-batu-city-tour.webp"
 duration: "3 Days 2 Nights"
+days: 3
 price: "Mulai Rp 1.200.000"
 description: "Kombinasi tur Bromo dengan eksplorasi destinasi di Batu dan Malang dalam 3 hari 2 malam"
 ---

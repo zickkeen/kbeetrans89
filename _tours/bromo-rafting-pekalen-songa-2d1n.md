@@ -4,6 +4,7 @@ title: "Bromo – Rafting Pekalen atau Songa (2D1N)"
 slug: "bromo-rafting-pekalen-songa-2d1n"
 image: "/assets/img/bromo-midnight.webp"
 duration: "2 Days 1 Night"
+days: 2
 price: "Mulai Rp 1.300.000"
 description: "Kombinasi tur Bromo dengan aktivitas rafting di Pekalen atau Songa dalam 2 hari 1 malam"
 ---

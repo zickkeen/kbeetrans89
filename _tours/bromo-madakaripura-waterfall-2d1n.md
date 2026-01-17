@@ -4,6 +4,7 @@ title: "Bromo – Madakaripura Waterfall (2D1N)"
 slug: "bromo-madakaripura-waterfall-2d1n"
 image: "/assets/img/madakaripura-waterfall.webp"
 duration: "2 Days 1 Night"
+days: 2
 price: "Mulai Rp 850.000"
 description: "Kombinasi tur Bromo dan air terjun Madakaripura dalam 2 hari 1 malam"
 ---

@@ -4,6 +4,7 @@ title: "Bromo Midnight"
 slug: "bromo-midnight"
 image: "/assets/img/bromo-midnight.webp"
 duration: "1 Day Trip"
+days: 1
 price: "Mulai Rp 350.000"
 description: "Nikmati keindahan sunrise di Gunung Bromo dengan tur midnight yang menakjubkan"
 highlight: true
