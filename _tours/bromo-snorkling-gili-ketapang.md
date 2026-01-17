@@ -7,6 +7,7 @@ duration: "2D1N"
 days: 2
 price: "Mulai Rp 850.000"
 description: "Kombinasi sunrise Bromo dan snorkling di Gili Ketapang dalam 2 hari 1 malam"
+highlight: true
 ---
 
 # Paket Tour Bromo Snorkling Gili Ketapang (2D1N)

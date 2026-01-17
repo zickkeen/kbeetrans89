@@ -7,7 +7,6 @@ duration: "2 Days 1 Night"
 days: 2
 price: "Mulai Rp 700.000"
 description: "Nikmati pengalaman lengkap di Gunung Bromo dengan menginap satu malam"
-highlight: true
 ---
 
 # Paket Bromo 2 Hari 1 Malam (2D1N)
