@@ -7,7 +7,6 @@ duration: "1 Day Service"
 days: 1
 price: "Mulai Rp 350.000"
 description: "Nikmati keindahan air terjun Tumpak Sewu yang spektakuler dengan trekking menantang"
-highlight: true
 ---
 
 # Paket Tour Tumpak Sewu Waterfall
