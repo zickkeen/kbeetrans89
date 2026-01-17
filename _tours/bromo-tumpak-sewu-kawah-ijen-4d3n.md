@@ -7,6 +7,7 @@ duration: "4 Days 3 Nights"
 days: 4
 price: "Mulai Rp 1.750.000"
 description: "Tur komprehensif meliputi Bromo, Tumpak Sewu, dan Kawah Ijen dalam 4 hari 3 malam"
+highlight: true
 ---
 
 # Paket Bromo – Tumpak Sewu Waterfall – Kawah Ijen (4D3N)
