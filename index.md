@@ -109,8 +109,8 @@ title: Home
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {% for tour in site.tours %}
-        {% if tour.highlight %}
+      {% assign sorted_highlights = site.tours | sort: 'days' | where: 'highlight', true %}
+      {% for tour in sorted_highlights %}
         <a
           href="{{ tour.url | relative_url }}"
           class="group block destination-card bg-white rounded-3xl shadow-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-xl"
@@ -135,8 +135,41 @@ title: Home
             </div>
           </div>
         </a>
-        {% endif %}
       {% endfor %}
+    </div>
+
+    <div class="mt-10">
+      <a href="{{ '/tours/' | relative_url }}" class="inline-block bg-[#ff5722] text-white py-3 px-6 rounded-lg hover:bg-[#e64a19] transition duration-300">
+        Lihat Paket Lainnya
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="rent-car" class="text-center py-12">
+  <div class="container">
+    <p class="color-accent font-semibold tracking-wider uppercase mb-2">
+      RENT CAR
+    </p>
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">
+      Highlight Mobil Pilihan
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+      {% assign sorted_rent_cars = site.rent_cars | sort: 'order' %}
+      {% for car in sorted_rent_cars limit: 4 %}
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden p-5">
+        <img class="w-full h-48 object-cover rounded-2xl mb-4" src="{{ site.url }}{{ site.baseurl }}{{ car.image | default: '/assets/img/placeholder.jpg' }}" alt="{{ car.title }}" />
+        <h3 class="text-xl font-bold text-[#1A2B48] mb-2">{{ car.title }}</h3>
+        <p class="font-semibold color-accent">{{ car.regular_price }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="mt-10">
+      <a href="{{ '/rent-cars/' | relative_url }}" class="inline-block bg-[#ff5722] text-white py-3 px-6 rounded-lg hover:bg-[#e64a19] transition duration-300">
+        Lihat Semua Harga Rent Car
+      </a>
     </div>
   </div>
 </section>
@@ -147,70 +180,21 @@ title: Home
     <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-12">Testimonial Pelanggan</h2>
     <div class="testimonial-slider-container">
       <div class="testimonial-track">
-        <!-- Testimonial 1 -->
+        {% assign sorted_testimonials = site.testimonials | sort: 'title' %}
+        {% for testi in sorted_testimonials %}
         <div class="testimonial-card">
           <div class="rating">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
-            ><span>&#9733;</span><span>&#9733;</span>
+            {% assign r = testi.rating | default: 5 %}
+            {% for i in (1..r) %}
+            <span>&#9733;</span>
+            {% endfor %}
           </div>
           <p>
-            "Pelayanan K-Bee Trans 89 luar biasa! Drivernya, Mas Rian,
-            ramah banget dan tahu jalan tikus. Perjalanan ke Bromo jadi
-            lancar jaya. Recommended!"
+            {{ testi.content | markdownify }}
           </p>
-          <span class="author">- Bpk. Haryono, Jakarta</span>
+          <span class="author">- {{ testi.author }}</span>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card">
-          <div class="rating">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
-            ><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p>
-            "Awalnya ragu, tapi ternyata unit Hiace-nya bersih dan wangi.
-            Jemputan di Bandara Juanda tepat waktu banget. Pasti pakai
-            K-Bee lagi."
-          </p>
-          <span class="author">- Ibu Sintia & Keluarga</span>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card">
-          <div class="rating">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
-            ><span>&#9733;</span><span>&#9734;</span>
-          </div>
-          <p>
-            "Overall oke. Armadanya nyaman untuk rombongan kami keliling
-            Batu. Mungkin bisa ditambahkan free air mineral di mobil biar
-            lebih mantap."
-          </p>
-          <span class="author">- Kak Budi, Rombongan Mahasiswa</span>
-        </div>
-        <!-- Testimonial 4 -->
-        <div class="testimonial-card">
-          <div class="rating">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
-            ><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p>
-            "Harga bersaing dan pelayanannya profesional. Admin fast
-            response. Nggak repot sama sekali, tinggal duduk manis. Terima
-            kasih K-Bee Trans 89!"
-          </p>
-          <span class="author">- Ibu Mega, Surabaya</span>
-        </div>
-        <!-- Testimonial 5 -->
-        <div class="testimonial-card">
-          <div class="rating">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
-            ><span>&#9733;</span><span>&#9733;</span>
-          </div>
-          <p>
-            "Menyenangkan! Diajak keliling pantai-pantai di Malang
-            Selatan. Drivernya sabar banget nemenin kita foto-foto. Top!"
-          </p>
-          <span class="author">- Rina dan kawan-kawan</span>
-        </div>
+        {% endfor %}
       </div>
       <!-- Tombol Navigasi Slider -->
       <button class="slider-btn" id="prevBtn">&#10094;</button>

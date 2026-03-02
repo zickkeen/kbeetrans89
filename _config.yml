@@ -16,6 +16,11 @@ collections:
   tours:
     output: true
     permalink: /tours/:name/
+  testimonials:
+    output: true
+    permalink: /testimonials/:name/
+  rent_cars:
+    output: false
 
 # Exclude from processing
 exclude:

@@ -14,7 +14,7 @@ title: "Booking Tour"
       </div>
 
       <div class="bg-white rounded-lg shadow-lg p-8">
-        <form action="https://formspree.io/f/xpznqrya" method="POST" class="space-y-6">
+        <form id="booking-form" class="space-y-6">
           <!-- Paket Tour -->
           <div>
             <label for="tour" class="block text-sm font-medium text-gray-700 mb-2">Pilih Paket Tour</label>
@@ -76,7 +76,7 @@ title: "Booking Tour"
 
           <!-- Google reCAPTCHA -->
           <div class="text-center mb-6">
-            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+            <div class="g-recaptcha" data-sitekey="6Ldcm5cUAAAAAMtta5WarfrkP6xT64flizYfRxvh"></div>
           </div>
 
           <!-- Submit -->
@@ -100,6 +100,7 @@ title: "Booking Tour"
 <script>
 // Auto-select tour package from URL parameter
 document.addEventListener('DOMContentLoaded', function() {
+  const adminWhatsapp = '6282146252589';
   const urlParams = new URLSearchParams(window.location.search);
   const tourParam = urlParams.get('tour');
 
@@ -118,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Enable/disable submit button based on reCAPTCHA
   const submitBtn = document.getElementById('submit-btn');
-  const form = document.querySelector('form');
+  const form = document.getElementById('booking-form');
 
   // Initially disable submit button
   submitBtn.disabled = true;
@@ -139,12 +140,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Form validation
   form.addEventListener('submit', function(e) {
+    e.preventDefault();
     const recaptchaResponse = grecaptcha.getResponse();
     if (recaptchaResponse.length === 0) {
-      e.preventDefault();
       alert('Silakan lengkapi reCAPTCHA terlebih dahulu.');
       return false;
     }
+
+    const selectedTourText = document.getElementById('tour').options[document.getElementById('tour').selectedIndex].text;
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim() || '-';
+    const participants = document.getElementById('participants').value.trim();
+    const date = document.getElementById('date').value || '-';
+    const pickup = document.getElementById('pickup').value;
+    const message = document.getElementById('message').value.trim() || '-';
+
+    const whatsappMessage = [
+      'Halo K-Bee Trans 89, saya ingin booking tour dengan detail berikut:',
+      '',
+      '*Paket Tour:* ' + selectedTourText,
+      '*Nama:* ' + name,
+      '*No. WhatsApp:* ' + phone,
+      '*Email:* ' + email,
+      '*Jumlah Peserta:* ' + participants,
+      '*Tanggal Keberangkatan:* ' + date,
+      '*Lokasi Penjemputan:* ' + pickup,
+      '*Pesan Tambahan:* ' + message
+    ].join('\n');
+
+    const whatsappUrl = 'https://wa.me/' + adminWhatsapp + '?text=' + encodeURIComponent(whatsappMessage);
+    window.open(whatsappUrl, '_blank');
   });
 });
 </script>
