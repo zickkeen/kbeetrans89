@@ -240,12 +240,14 @@
           {% endif %}
           {% if page.url != '/' %}
           <li><a class="{% if page.url contains '/tours/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/tours/">Paket Tour</a></li>
+          <li><a class="{% if page.url contains '/tour-travel/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/tour-travel/">Tour Travel</a></li>
           <li><a class="{% if page.url contains '/rent-cars/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/rent-cars/">Rent Car</a></li>
           <li><a class="{% if page.url contains '/booking/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/booking/">Booking</a></li>
           {% endif %}
           <li><a class="{% if page.url contains '/blog/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a></li>
           {% if page.url == '/' %}
           <li><a href="#kategori">Kategori</a></li>
+          <li><a href="#shuttle-info">Shuttle</a></li>
           <li><a href="#destinations">Destinasi</a></li>
           <li><a href="#rent-car">Top Rent Car</a></li>
           <li><a href="#testimonials">Testimonial</a></li>

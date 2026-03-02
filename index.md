@@ -26,8 +26,9 @@ title: Home
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Card 1: Explorer JATIM -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      <a
+        href="{{ '/tours/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
       >
         <div
           class="service-icon-base mx-auto bg-green-100 text-green-600"
@@ -40,11 +41,12 @@ title: Home
         <p class="text-gray-500 text-sm">
           Jelajahi JATIM dengan berbagai destinasi wisata yang menarik.
         </p>
-      </div>
+      </a>
 
       <!-- Card 2: Shuttle Service -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl relative"
+      <a
+        href="{{ '/shuttle/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl relative"
       >
         <div class="service-icon-base mx-auto bg-blue-100 text-blue-600">
           <i class="fas fa-plane-departure"></i>
@@ -60,11 +62,12 @@ title: Home
             class="w-4 h-4 rounded-full bg-yellow-400 opacity-70"
           ></div>
         </div>
-      </div>
+      </a>
 
       <!-- Card 3: Rent Car -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      <a
+        href="{{ '/rent-cars/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
       >
         <div
           class="service-icon-base mx-auto bg-yellow-100 text-yellow-600"
@@ -77,11 +80,12 @@ title: Home
         <p class="text-gray-500 text-sm">
           Sewa mobil dengan harga terjangkau dan layanan terbaik.
         </p>
-      </div>
+      </a>
 
       <!-- Card 4: Tour Travel -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      <a
+        href="{{ '/tour-travel/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
       >
         <div
           class="service-icon-base mx-auto bg-purple-100 text-purple-600"
@@ -94,7 +98,43 @@ title: Home
         <p class="text-gray-500 text-sm">
           Nikmati perjalanan wisata yang tak terlupakan dengan tim kami.
         </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="shuttle-info" class="py-12">
+  <div class="container">
+    <p class="color-accent font-semibold tracking-wider uppercase mb-2 text-center">
+      SHUTTLE
+    </p>
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1A2B48] mb-6 text-center">
+      Informasi Layanan Shuttle
+    </h2>
+    <p class="text-gray-600 max-w-4xl mx-auto leading-relaxed text-center mb-10">
+      K-BeeTrans89 telah melayani sejak 2012 dengan layanan shuttle yang nyaman, aman, dan tepat waktu untuk rute Malang Raya, Batu,
+      Kepanjen, Juanda, Surabaya, hingga Tanjung Perak.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-lg font-bold text-[#1A2B48] mb-2">Garansi Tiket Pesawat</h3>
+        <p class="text-gray-600 text-sm">Ada ganti rugi tiket jika keterlambatan terjadi karena kesalahan manajemen/driver kami.</p>
       </div>
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-lg font-bold text-[#1A2B48] mb-2">Armada Terbaik</h3>
+        <p class="text-gray-600 text-sm">Armada terawat rutin: Avanza, Innova Reborn, Calya, Hiace, Elf, medium bus, dan big bus.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-lg font-bold text-[#1A2B48] mb-2">Door to Door</h3>
+        <p class="text-gray-600 text-sm">Penjemputan langsung ke lokasi customer demi kenyamanan perjalanan.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="{{ '/shuttle/' | relative_url }}" class="inline-block bg-[#ff5722] text-white py-3 px-6 rounded-lg hover:bg-[#e64a19] transition duration-300">
+        Lihat Detail Shuttle
+      </a>
     </div>
   </div>
 </section>
@@ -161,7 +201,10 @@ title: Home
       <div class="bg-white rounded-3xl shadow-lg overflow-hidden p-5">
         <img class="w-full h-48 object-cover rounded-2xl mb-4" src="{{ site.url }}{{ site.baseurl }}{{ car.image | default: '/assets/img/placeholder.jpg' }}" alt="{{ car.title }}" />
         <h3 class="text-xl font-bold text-[#1A2B48] mb-2">{{ car.title }}</h3>
-        <p class="font-semibold color-accent">{{ car.regular_price }}</p>
+        <p class="font-semibold color-accent mb-4">{{ car.regular_price }}</p>
+        <a href="{{ '/booking/?tour=' | append: car.slug | relative_url }}" class="inline-block bg-[#ff5722] text-white py-2 px-4 rounded-lg hover:bg-[#e64a19] transition duration-300">
+          Booking
+        </a>
       </div>
       {% endfor %}
     </div>

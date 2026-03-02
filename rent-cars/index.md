@@ -38,6 +38,10 @@ title: "Rent Car"
             {% endfor %}
           </ol>
         </div>
+
+        <a href="{{ '/booking/?tour=' | append: car.slug | relative_url }}" class="inline-block mt-5 bg-[#ff5722] text-white py-2 px-4 rounded-lg hover:bg-[#e64a19] transition duration-300">
+          Booking
+        </a>
       </div>
       {% endfor %}
     </div>
