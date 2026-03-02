@@ -26,8 +26,9 @@ title: Home
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Card 1: Explorer JATIM -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      <a
+        href="{{ '/tours/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
       >
         <div
           class="service-icon-base mx-auto bg-green-100 text-green-600"
@@ -40,7 +41,7 @@ title: Home
         <p class="text-gray-500 text-sm">
           Jelajahi JATIM dengan berbagai destinasi wisata yang menarik.
         </p>
-      </div>
+      </a>
 
       <!-- Card 2: Shuttle Service -->
       <a
@@ -64,8 +65,9 @@ title: Home
       </a>
 
       <!-- Card 3: Rent Car -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      <a
+        href="{{ '/rent-cars/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
       >
         <div
           class="service-icon-base mx-auto bg-yellow-100 text-yellow-600"
@@ -78,11 +80,12 @@ title: Home
         <p class="text-gray-500 text-sm">
           Sewa mobil dengan harga terjangkau dan layanan terbaik.
         </p>
-      </div>
+      </a>
 
       <!-- Card 4: Tour Travel -->
-      <div
-        class="service-card bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
+      <a
+        href="{{ '/tour-travel/' | relative_url }}"
+        class="service-card block bg-white p-6 rounded-3xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl"
       >
         <div
           class="service-icon-base mx-auto bg-purple-100 text-purple-600"
@@ -95,7 +98,7 @@ title: Home
         <p class="text-gray-500 text-sm">
           Nikmati perjalanan wisata yang tak terlupakan dengan tim kami.
         </p>
-      </div>
+      </a>
     </div>
   </div>
 </section>

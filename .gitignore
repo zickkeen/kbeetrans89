@@ -6,8 +6,11 @@ _site/
 
 # Ruby
 .bundle/
-vendor/
+vendor/bundle/
 Gemfile.lock
+
+# Build & coverage
+coverage/
 
 # IDE
 .vscode/
@@ -40,4 +43,3 @@ node_modules/
 .env.development.local
 .env.test.local
 .env.production.local
-_site/
