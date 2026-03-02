@@ -10,12 +10,23 @@ title: "Paket Tour"
       <p class="text-gray-600 max-w-2xl mx-auto">
         Pilih paket tour impian Anda dan jelajahi keindahan jatim bersama K-BeeTrans89
       </p>
+      <div class="mb-6 flex items-center justify-end w-full">
+        <label for="durationFilter" class="mr-3 text-sm text-gray-600">Filter durasi:</label>
+        <select id="durationFilter" class="px-3 py-2 border rounded-md text-sm">
+          <option value="all">Semua</option>
+          <option value="1">1 Day</option>
+          <option value="2">2 Days</option>
+          <option value="3">3 Days</option>
+          <option value="4">4 Days</option>
+          <option value="5">5 Days</option>
+        </select>
+      </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {% assign sorted_tours = site.tours | sort: 'days' %}
       {% for tour in sorted_tours %}
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+      <div class="tour-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-days="{{ tour.days | default: 1 }}">
         {% if tour.image %}
         <img src="{{ site.url }}{{ site.baseurl }}{{ tour.image }}" alt="{{ tour.title }}" class="w-full h-48 object-cover">
         {% endif %}
@@ -35,5 +46,22 @@ title: "Paket Tour"
       </div>
       {% endfor %}
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var filter = document.getElementById('durationFilter');
+        if(!filter) return;
+        filter.addEventListener('change', function(){
+          var val = this.value;
+          var cards = document.querySelectorAll('.tour-card');
+          cards.forEach(function(card){
+            if(val === 'all' || card.dataset.days === val){
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
   </div>
 </section>

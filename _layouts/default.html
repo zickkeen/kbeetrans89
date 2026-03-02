@@ -72,6 +72,155 @@
         transform: translateY(-8px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
       }
+      .whatsapp-widget {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 9999;
+      }
+      .whatsapp-float {
+        min-height: 62px;
+        background: #25d366;
+        color: #fff;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        border: none;
+        cursor: pointer;
+      }
+      .whatsapp-float .icon-wrap {
+        width: 36px;
+        height: 36px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .whatsapp-float .label {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+      .whatsapp-panel {
+        width: 320px;
+        margin-bottom: 10px;
+        background: #efeae2;
+        border: 1px solid #d1d7db;
+        border-radius: 14px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        overflow: hidden;
+        position: relative;
+      }
+      .whatsapp-panel::after {
+        content: "";
+        position: absolute;
+        right: 24px;
+        bottom: -10px;
+        width: 18px;
+        height: 18px;
+        background: #efeae2;
+        border-right: 1px solid #d1d7db;
+        border-bottom: 1px solid #d1d7db;
+        transform: rotate(45deg);
+      }
+      .whatsapp-panel.hidden {
+        display: none;
+      }
+      .whatsapp-panel-header {
+        background: #075e54;
+        color: #ffffff;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .whatsapp-panel-header .avatar {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .whatsapp-panel-header .meta {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+      .whatsapp-panel-header .title {
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .whatsapp-panel-header .status {
+        font-size: 11px;
+        color: #dcf8c6;
+      }
+      .whatsapp-panel-body {
+        padding: 12px;
+        background: #e5ddd5;
+      }
+      .whatsapp-panel p {
+        margin: 0 0 8px;
+        font-size: 14px;
+        color: #111b21;
+        font-weight: 500;
+        background: #ffffff;
+        border: 1px solid #e7e7e7;
+        border-radius: 8px;
+        border-top-left-radius: 0;
+        padding: 10px 10px 20px;
+        position: relative;
+        max-width: 90%;
+      }
+      .whatsapp-panel p::after {
+        content: "12:20";
+        position: absolute;
+        right: 10px;
+        bottom: 6px;
+        font-size: 10px;
+        color: #667781;
+      }
+      .whatsapp-input-row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background: #f0f2f5;
+        border-radius: 24px;
+        padding: 6px;
+      }
+      .whatsapp-input-row input {
+        flex: 1;
+        border: none;
+        border-radius: 18px;
+        padding: 10px 12px;
+        font-size: 14px;
+        outline: none;
+        background: #ffffff;
+      }
+      .whatsapp-input-row button {
+        border: none;
+        background: #00a884;
+        color: #fff;
+        border-radius: 999px;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        font-weight: 700;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .whatsapp-float:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+      }
     </style>
     <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
     {% seo %}
@@ -84,13 +233,19 @@
           <img class="image-logo" alt="Logo K-Bee Trans 89" src="{{ site.url }}{{ site.baseurl }}/assets/img/KbeeTrans89.png" />
         </a>
         <ul class="nav-links">
-          <li><a class="{% if page.url == '/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
+          {% if page.url == '/' %}
+          <li><a class="{% if page.url == '/' %}active{% endif %}" href="#home">Homepage</a></li>
+          {% endif %}
+          {% if page.url != '/' %}
           <li><a class="{% if page.url contains '/tours/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/tours/">Paket Tour</a></li>
-          <li><a class="{% if page.url contains '/blog/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a></li>
+          <li><a class="{% if page.url contains '/rent-cars/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/rent-cars/">Rent Car</a></li>
           <li><a class="{% if page.url contains '/booking/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/booking/">Booking</a></li>
+          {% endif %}
+          <li><a class="{% if page.url contains '/blog/' %}active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a></li>
           {% if page.url == '/' %}
           <li><a href="#kategori">Kategori</a></li>
           <li><a href="#destinations">Destinasi</a></li>
+          <li><a href="#rent-car">Top Rent Car</a></li>
           <li><a href="#testimonials">Testimonial</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="#contact">Kontak</a></li>
@@ -117,6 +272,66 @@
         </p>
       </div>
     </footer>
+
+    <div class="whatsapp-widget">
+      <div id="waPanel" class="whatsapp-panel hidden">
+        <div class="whatsapp-panel-header">
+          <span class="avatar"><i class="fab fa-whatsapp" style="font-size:16px;color:#ffffff"></i></span>
+          <span class="meta">
+            <span class="title">Admin K-Bee Trans 89</span>
+            <span class="status">online</span>
+          </span>
+        </div>
+        <div class="whatsapp-panel-body">
+          <p>Apakah ada yang bisa kami bantu?</p>
+          <div class="whatsapp-input-row">
+            <input id="waInput" type="text" placeholder="Mau tanya harga paket tour" />
+            <button id="waSendBtn" type="button" aria-label="Kirim pesan">
+              <i class="fas fa-paper-plane" style="font-size:14px;color:#ffffff"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button id="waFloatBtn" type="button" class="whatsapp-float" aria-label="Chat via WhatsApp">
+        <span class="icon-wrap"><i class="fab fa-whatsapp" style="font-size:22px;color:#ffffff"></i></span>
+        <span class="label">Ada yang ingin di tanyakan?</span>
+      </button>
+    </div>
+
+    <script>
+      (function () {
+        const waTarget = '6282146252589';
+        const waFloatBtn = document.getElementById('waFloatBtn');
+        const waPanel = document.getElementById('waPanel');
+        const waInput = document.getElementById('waInput');
+        const waSendBtn = document.getElementById('waSendBtn');
+
+        function sendWhatsAppMessage() {
+          const message = waInput.value.trim();
+          if (!message) {
+            waInput.focus();
+            return;
+          }
+          const waUrl = `https://wa.me/${waTarget}?text=${encodeURIComponent(message)}`;
+          window.open(waUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        waFloatBtn.addEventListener('click', function () {
+          waPanel.classList.toggle('hidden');
+          if (!waPanel.classList.contains('hidden')) {
+            waInput.focus();
+          }
+        });
+
+        waSendBtn.addEventListener('click', sendWhatsAppMessage);
+        waInput.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter') {
+            sendWhatsAppMessage();
+          }
+        });
+      })();
+    </script>
 
   </body>
 </html>
